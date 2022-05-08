@@ -75,4 +75,23 @@ footer a{
   color: #024e76;
 }
 
-  
+.hero {
+  background-image: url("../hero-bg.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  position: relative
+}
+
+.hero-form {
+  background-color: #fce138;
+  color: #024e76;
+  padding: 20px;
+  border-style: solid ;
+  border-width: 3px;
+  border-color: #024e76;
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
+}
