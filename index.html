@@ -32,7 +32,45 @@
             </nav>
 
         </header>
-        
+
+        <section>
+            <div>
+                <h3>Get Started Today!</h3>
+                <p>Fill out this form and one of our trainers will shecduke a consult.</p>
+                <!-- Form element -->
+                <form>
+                    <label for="name">Enter full name:</label><br>
+                    <input type="text" placeholder="Your Name" name="name" id="name" /><br>
+                    <label for="email">Enter email address:</label><br>
+                    <input type="email" placeholder="Emai Address" name="email" id="email" /><br>
+                    <label for="phone">Enter a telephone number:</label><br>
+                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" /><br>
+                  
+                    <!-- Radio element in a form -->
+                    <p>Have you worked with a trainer before?
+                        <input type="radio" id="yes-trainer" name="trainer-confirm" value="Yes" />
+                        <label for="yes-trainer">Yes</label>
+                        <input type="radio" id="no-trainer" name="trainer-confirm" value="No">
+                        <label for="no-trainer">No</label> 
+                    </p>
+                    
+                    <!-- Checkbox element-->
+                    <p>
+                        <label for="checkbox">I acknowledge that I am at least 18 years</label>
+                        <input type="checkbox" name ="age-confirm" id="checkbox" value="acknowledge" />
+                    </p>
+                   
+                    <!-- Add Box -->
+                    <div>
+                        <button type="submit" >
+                            Get running!
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
         <section>
            <h2>What We Do</h2>
         </section>
@@ -42,7 +80,7 @@
         </section>
 
         <section>
-            <h2>Your Trainers</h2>
+            <h2>Meet The Trainers</h2>
         </section>
 
         <section>
@@ -51,6 +89,10 @@
 
     </body>
     <footer>
-        <h2>❤️ Made with love by RUN BUDDY.</h2>
+        <h2>❤️ Made with love by Run Buddy.</h2>
+        <div>
+            <a href="#read-our-privacy-policy">Read Our Privacy Policy</a><br />
+            &copy; 2022 Run Buddy, Inc.
+        </div>
     </footer>
 </html>

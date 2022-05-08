@@ -1,17 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: white;
     font-family:  Helvetica, Arial, sans-serif;
+    color: #39a6b2;
   }
   
 header {
     padding: 20px 20px;
     color: yellow;
     background-color: #39a6b2;
+    width: 100%;
   }
 
 header h1 {
@@ -46,22 +49,30 @@ header nav ul li a {
   font-size: 19px;
 }
 
-
-section h2 {
-      padding-left: 10px;
-  }
-  figure {
-    width: 200px;
-    background-color: #f0ead6;
-  }
-  
-  /* TODO: Label selector type */
-  .highlighted-text {
-    font-weight: bolder;
-  }
-  
 footer {
-    margin: 10px ;
-    font-size: small;
-  }
+  padding: 20px 35px 20px 35px;
+  background: #fce138;
+  width: 100%;
+}
+  
+
+footer h2 {
+  color: #024e76;
+  display: inline;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+  display: inline;
+  font-size: smaller;
+}
+
+footer a{
+  color: #024e76;
+}
+
   
