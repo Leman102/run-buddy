@@ -12,3 +12,5 @@ https://leman102.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by LeMan
+
+### ©️2019 Run Buddy, Inc 
