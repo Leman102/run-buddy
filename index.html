@@ -57,16 +57,21 @@
                   
                     <!-- Radio element in a form -->
                     <p>Have you worked with a trainer before?
-                        <input type="radio" id="yes-trainer" name="trainer-confirm" value="Yes" />
-                        <label for="yes-trainer">Yes</label>
-                        <input type="radio" id="no-trainer" name="trainer-confirm" value="No">
-                        <label for="no-trainer">No</label> 
-                    </p>
-                    
+                        <span class="radio-wrapper">
+                            <input type="radio" id="trainer-yes" name="trainer-confirm" value="Yes" />
+                            <label for="yes-trainer">Yes</label>
+                        </span>
+                        <span class="radio-wrapper">
+                            <input type="radio" id="trainer-no" name="trainer-confirm" value="No">
+                            <label for="no-trainer">No</label> 
+                        </span>
+                    </p>                    
                     <!-- Checkbox element-->
                     <p>
-                        <label for="checkbox">I acknowledge that I am at least 18 years</label>
-                        <input type="checkbox" name ="age-confirm" id="checkbox" value="acknowledge" />
+                        <span class="checkbox-wrapper">
+                            <input type="checkbox" name ="age-confirm" id="checkbox" />
+                            <label for="checkbox">I acknowledge that I am at least 18 years</label>
+                        </span>
                     </p>
                    
                     <!-- Add Box -->
