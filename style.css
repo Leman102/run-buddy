@@ -20,6 +20,15 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* stick the header for Safary browser */
+    position: -webkit-sticky;
+    /* "stick" the header */
+    position: sticky;
+    top: 0;
+    background-image: url("./hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
   }
 
 header h1 {
@@ -27,6 +36,8 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
+  /* add shadow */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav{
@@ -52,6 +63,14 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.5vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
 /* Footer section */
@@ -87,7 +106,8 @@ footer a{
 .hero {
   background-image: url("./hero-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 80%;
+  background-attachment: fixed;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -96,7 +116,7 @@ footer a{
 }
 
 .hero-form {
-  background-color: #fce138;
+  background-color: rgba(252, 225, 56, 0.8 );
   color: #024e76;
   padding: 20px;
   border-style: solid ;
@@ -104,6 +124,9 @@ footer a{
   border-color: #024e76;
   width: 40%;
   margin: 3.5%;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* rounded corners */
+  border-radius: 15px;
 }
 
 .hero-cta {
@@ -119,6 +142,7 @@ footer a{
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form h3 {
@@ -139,6 +163,14 @@ footer a{
   font-size:  medium;
   color: #024e76;
   width: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* highlight the field that the users is currently typing in */
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .hero-form label{
@@ -152,6 +184,11 @@ footer a{
   border: none;
   font-size: 16px;
   font-weight: bold;
+  border-radius: 10px;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;
 }
 
 /* Title section */
@@ -242,13 +279,18 @@ footer a{
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
+  /* border-bottom: 1px solid #39a6b2; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
+
+/* add border to all children but the last child */
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
+}
 
 /*trainers section */
 
@@ -347,6 +389,16 @@ footer a{
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
+}
+
+.contact-form textarea, .contact-form input {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form textarea:focus, .contact-form input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 
@@ -358,6 +410,11 @@ footer a{
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #39a6b2;
 }
 
 /*Privacy page*/
@@ -372,6 +429,7 @@ footer a{
   header{
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
   header h1 {
     width: 100%;
