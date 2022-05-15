@@ -1,2 +1,14 @@
-# run-buddy
-Working on the 2.0 version
+# Run Buddy
+
+## Purpose
+A website that offers fitness training services.
+
+## Built With
+* HTML
+* CSS
+
+## Website
+https://leman102.github.io/run-buddy/
+
+## Contribution
+Made with ❤️ by LeMan
